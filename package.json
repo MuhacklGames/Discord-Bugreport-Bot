@@ -1,0 +1,26 @@
+{
+  "name": "discord-bug-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that guides testers through a step-by-step bug report flow and posts to a forum channel.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "bug",
+    "report",
+    "forum",
+    "intake",
+    "wizard"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
