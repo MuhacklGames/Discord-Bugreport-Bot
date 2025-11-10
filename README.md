@@ -1,12 +1,12 @@
 # 🐞 Muhackl Games — Discord Bug Report Bot
 
-A structured, user-friendly **Bug Report Bot** for the Muhackl Games community.  
+A structured, user-friendly **Bug Report Bot** for your Discord community.  
 Players follow a guided flow to report issues directly into your **bug forum channel** — clean, complete, and consistent.  
 It’s built with the same Alpine precision and playful “🐮 Muh” tone as our Feedback Bot.
 
 ---
 
-## 🎯 Why this bot (for Muhackl)
+## 🎯 Why this bot
 
 - 🧭 **Step-by-step bug reporting flow**
 - 📎 **Optional media intake** (auto-closes after first post)
@@ -29,7 +29,7 @@ It’s built with the same Alpine precision and playful “🐮 Muh” tone as o
 
 ---
 
-## ⚙️ Setup (Muhackl edition)
+## ⚙️ Setup 
 
 
 ```bash
@@ -41,14 +41,14 @@ npm install
 Create .env (or copy from .env.example) and fill:
 
 env
-Code kopieren
+Copy Code
 DISCORD_TOKEN=your_bot_token
 GUILD_ID=your_server_id
 FORUM_CHANNEL_ID=forum_channel_id
 INTAKE_PARENT_CHANNEL_ID=text_channel_id
 PANEL_MESSAGE_URL=     # optional: direct link to the bot's panel message
 PANEL_TARGET_ID=       # optional fallback (channel/thread id)
-EMOJI_WHITELIST=🔺,🔴,❌,🟠,🟢,🦢,🎮,📹,🔊,🕹️,🚨,🔥
+EMOJI_WHITELIST=🔺,🔴,❌,🟠,🟢,🦢,🎮,📹,🔊,🕹️,🚨,🔥 #customisable to your needs
 USE_MESSAGE_CONTENT=true
 🧱 Discord Setup
 Bot permissions
@@ -78,7 +78,7 @@ Intake Text Channel	View, Create Private Threads	Temporary uploads (media/screen
 🚀 Deployment
 Register command
 bash
-Code kopieren
+Copy Code
 npm run deploy
 Adds the /post_bug_panel command to your server.
 
@@ -90,7 +90,7 @@ Create the bug panel
 In Discord, run:
 
 bash
-Code kopieren
+Copy Code
 /post_bug_panel
 → This creates the Bug Reporting Panel thread with a Report Bug button.
 
@@ -106,7 +106,7 @@ Code kopieren
 Example thread:
 
 yaml
-Code kopieren
+Copy Code
 ### 🐞 Player character stuck on fence
 
 Tester: @User
@@ -125,7 +125,7 @@ Character clips through the fence and cannot move.
 
 Severity: 5/10 – somewhat annoying
 Version: v0.0.16
-🧀 Muhackl styling notes
+🧀 Styling notes
 Emoji taxonomy
 
 Types: 🎮 Gameplay • 📹 Visuals • 🔊 Sound • 🕹️ Progress
@@ -138,7 +138,7 @@ Tone: clear, short, professional — never overwhelming.
 Visuals: Use Alpine-inspired colors in embeds (#90E0EF light blue for clarity).
 Footer: subtle thanks, not noise — we’re Bavarian, not loud 😉
 
-🧩 Customizing (for Lukas & team)
+🧩 Customizing
 Inside src/index.js:
 
 Update the arrays BUG_TYPES, GAME_CATEGORIES, and IMPACTS to match your projects.
@@ -154,7 +154,7 @@ npm run dev	Starts the bot
 
 🗂️ Folder Structure
 pgsql
-Code kopieren
+Copy Code
 discord-bugreport-bot/
 ├─ .gitignore
 ├─ .env.example
